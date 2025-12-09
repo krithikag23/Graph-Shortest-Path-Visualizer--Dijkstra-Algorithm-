@@ -12,3 +12,5 @@ target = input("Enter target node: ").strip()
 if start not in graph or target not in graph:
     print("Invalid nodes. Try again.")
     exit()
+
+distances, parent = dijkstra(graph, start)
