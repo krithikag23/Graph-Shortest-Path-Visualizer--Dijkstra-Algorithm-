@@ -22,3 +22,10 @@ def dijkstra(graph, start):
                 heapq.heappush(pq, (new_dist, neighbor))
 
     return dist, parent
+
+def get_path(parent, target):
+    path = []
+    while target is not None:
+        path.append(target)
+        target = parent[target]
+    return list(reversed(path))
