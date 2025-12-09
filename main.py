@@ -5,3 +5,5 @@ from dijkstra import dijkstra, get_path
 
 with open("graph_data.json") as f:
     graph = json.load(f)
+
+start = input("Enter start node: ").strip()    
