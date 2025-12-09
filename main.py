@@ -15,3 +15,6 @@ if start not in graph or target not in graph:
 
 distances, parent = dijkstra(graph, start)
 path = get_path(parent, target)
+
+print("\nShortest path:", " -> ".join(path))
+print("Total cost:", distances[target])
