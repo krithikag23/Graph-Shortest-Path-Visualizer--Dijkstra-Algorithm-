@@ -5,3 +5,6 @@
 - Uses Dijkstra Algorithm (min-heap)
 - Graph stored in JSON file
 
+## Run
+```bash
+python main.py
