@@ -1,2 +1,3 @@
-# Graph Shortest Path Visualizer (Dijkstra Algorithm)
+# Dijkstra Shortest Path Finder
+
 
