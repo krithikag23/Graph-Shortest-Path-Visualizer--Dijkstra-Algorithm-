@@ -14,3 +14,4 @@ if start not in graph or target not in graph:
     exit()
 
 distances, parent = dijkstra(graph, start)
+path = get_path(parent, target)
