@@ -6,6 +6,7 @@
 - Graph stored in JSON file
 - Visual graph drawing with:
   - Node labels
+  - Edge weights
 
 
 ## Run
