@@ -8,6 +8,7 @@
   - Node labels
   - Edge weights
   - Highlighted shortest path (green color)
+- Uses NetworkX + Matplotlib for visualization  
 
 
 ## Run
