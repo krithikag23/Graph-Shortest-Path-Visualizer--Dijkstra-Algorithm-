@@ -4,6 +4,7 @@
 - Calculates shortest path between nodes
 - Uses Dijkstra Algorithm (min-heap)
 - Graph stored in JSON file
+- Visual graph drawing with:
 
 ## Run
 ```bash
