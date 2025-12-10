@@ -19,3 +19,5 @@ path = get_path(parent, target)
 
 print("\nShortest path:", " -> ".join(path))
 print("Total cost:", distances[target])
+
+visualize_graph(graph, path)
