@@ -5,6 +5,8 @@
 - Uses Dijkstra Algorithm (min-heap)
 - Graph stored in JSON file
 - Visual graph drawing with:
+  - Node labels
+
 
 ## Run
 ```bash
