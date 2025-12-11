@@ -39,4 +39,10 @@ def a_star(graph, start, goal):
                 heapq.heappush(open_set, (f_cost[neighbor], neighbor))
 
     return g_cost, parent
-    
+
+def reconstruct_path(parent, target):
+    path = []
+    while target is not None:
+        path.append(target)
+        target = parent[target]
+    return list(reversed(path))    
