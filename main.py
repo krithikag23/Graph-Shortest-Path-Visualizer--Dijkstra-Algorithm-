@@ -3,6 +3,8 @@
 import json
 from visualize import visualize_graph
 from dijkstra import dijkstra, get_path
+from a_star import a_star, reconstruct_path
+
 
 with open("graph_data.json") as f:
     graph = json.load(f)
