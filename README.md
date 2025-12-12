@@ -20,3 +20,11 @@ It also provides visual graph output highlighting the shortest path.
   - Highlighted path (green for Dijkstra, red for A*)
 - Comparison visualization: Dijkstra vs A*
 
+
+---
+## How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
