@@ -1,20 +1,22 @@
 # Dijkstra & A* Shortest Path Finder
 
+This project computes and visualizes the shortest path in a weighted graph using:
+
+- **Dijkstra Algorithm** (min-heap)
+- **A\*** Algorithm (heuristic search)
+
+It also provides visual graph output highlighting the shortest path.
+
+---
+
 ## Features
-- Calculates shortest path between nodes
-- Supports **both Dijkstra Algorithm** (min-heap) **and A\*** (heuristic search)
-- Graph stored in JSON file
-- Automatic path reconstruction for each algorithm
-- Compares:
-  - Dijkstra Path vs A* Path
-  - Total path cost
-- Visual graph drawing with:
+- Calculates shortest path between any two nodes
+- Supports both Dijkstra and A* algorithms
+- JSON-based graph input
+- Path reconstruction for both algorithms
+- Visual graph rendering using:
   - Node labels
   - Edge weights
-  - Highlighted shortest path (green color)
-- Visualization available for both algorithms
-- Uses NetworkX + Matplotlib for graph rendering  
+  - Highlighted path (green for Dijkstra, red for A*)
+- Comparison visualization: Dijkstra vs A*
 
-## Run
-```bash
-python main.py
