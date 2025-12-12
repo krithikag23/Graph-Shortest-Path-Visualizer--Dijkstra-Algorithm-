@@ -19,3 +19,7 @@ def save_graph(graph, filename="graph_data.json"):
     with open(filename, "w") as f:
         json.dump(graph, f, indent=4)
     print(f"Graph saved to {filename}")
+
+if __name__ == "__main__":
+    g = generate_graph(num_nodes=8)
+    save_graph(g)
