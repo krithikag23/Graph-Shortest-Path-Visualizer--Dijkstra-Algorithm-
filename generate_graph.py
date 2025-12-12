@@ -14,3 +14,8 @@ def generate_graph(num_nodes=8, edge_prob=0.4, min_w=1, max_w=10):
                 graph[u].append([v, weight])
 
     return graph
+
+def save_graph(graph, filename="graph_data.json"):
+    with open(filename, "w") as f:
+        json.dump(graph, f, indent=4)
+    print(f"Graph saved to {filename}")
