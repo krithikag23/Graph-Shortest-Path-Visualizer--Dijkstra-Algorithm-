@@ -36,3 +36,4 @@ The project includes benchmarking to compare:
 - Execution time
 
 A* typically explores fewer nodes due to heuristic guidance,
+making it more efficient on large graphs and map-based problems.
