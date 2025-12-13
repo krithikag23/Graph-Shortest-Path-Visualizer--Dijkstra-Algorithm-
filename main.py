@@ -1,47 +1,24 @@
-# main.py
+import time
 
-import json
-from visualize import visualize_graph
-from dijkstra import dijkstra, get_path
-from a_star import a_star, reconstruct_path
+# Dijkstra benchmark
+start_time = time.time()
+distances, parent, dijkstra_visits = dijkstra(graph, start)
+dijkstra_time = time.time() - start_time
+dijkstra_path = get_path(parent, target)
 
-# Load graph from JSON file
-with open("graph_data.json") as f:
-    graph = json.load(f)
+# A* benchmark
+start_time = time.time()
+a_costs, a_parent, astar_visits = a_star(graph, start, target)
+astar_time = time.time() - start_time
+astar_path = reconstruct_path(a_parent, target)
 
-print("Available nodes:", ", ".join(graph.keys()))
+print("\n--- Benchmark Results ---")
+print(f"Dijkstra Path: {' -> '.join(dijkstra_path)}")
+print(f"Cost: {distances[target]}")
+print(f"Nodes Visited: {dijkstra_visits}")
+print(f"Time Taken: {dijkstra_time:.6f} seconds")
 
-start = input("Enter start node: ").strip()
-target = input("Enter target node: ").strip()
-
-if start not in graph or target not in graph:
-    print("Invalid nodes. Try again.")
-    exit()
-
-# ---------------------------
-# Dijkstra Algorithm
-# ---------------------------
-distances, parent = dijkstra(graph, start)
-path = get_path(parent, target)
-
-print("\n--- Dijkstra Algorithm ---")
-print("Path:", " -> ".join(path))
-print("Cost:", distances[target])
-
-# Visualize Dijkstra path
-print("\nVisualizing Dijkstra shortest path...")
-visualize_graph(graph, path)
-
-# ---------------------------
-# A* Algorithm
-# ---------------------------
-a_star_costs, a_star_parent = a_star(graph, start, target)
-a_star_path = reconstruct_path(a_star_parent, target)
-
-print("\n--- A* Algorithm ---")
-print("Path:", " -> ".join(a_star_path))
-print("Cost:", a_star_costs[target])
-
-# Visualize A* path
-print("\nVisualizing A* shortest path...")
-visualize_graph(graph, a_star_path)
+print("\nA* Path:", " -> ".join(astar_path))
+print(f"Cost: {a_costs[target]}")
+print(f"Nodes Visited: {astar_visits}")
+print(f"Time Taken: {astar_time:.6f} seconds")
