@@ -34,3 +34,5 @@ pip install -r requirements.txt
 The project includes benchmarking to compare:
 - Number of nodes visited
 - Execution time
+
+A* typically explores fewer nodes due to heuristic guidance,
