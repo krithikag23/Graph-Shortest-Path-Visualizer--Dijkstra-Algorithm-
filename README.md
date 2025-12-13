@@ -31,3 +31,4 @@ pip install -r requirements.txt
 ```
 
 ## Benchmark: Dijkstra vs A*
+The project includes benchmarking to compare:
