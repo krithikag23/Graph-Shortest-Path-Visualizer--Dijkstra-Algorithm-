@@ -37,3 +37,18 @@ The project includes benchmarking to compare:
 
 A* typically explores fewer nodes due to heuristic guidance,
 making it more efficient on large graphs and map-based problems.
+
+## Grid-Based Pathfinding (Game Style)
+
+This project also includes **2D grid-based pathfinding** using the A* algorithm,
+similar to how pathfinding works in games and robotics.
+
+### Features
+- Grid with obstacles (0 = free, 1 = blocked)
+- A* algorithm with Manhattan heuristic
+- Shortest path reconstruction
+- Visual grid display with highlighted path
+
+### Run Grid Pathfinding
+```bash
+python grid_main.py
