@@ -42,3 +42,5 @@ anim = FuncAnimation(
     interval=300,
     repeat=False
 )
+
+plt.show()
