@@ -38,3 +38,10 @@ def a_star_animated(grid, start, goal):
                 parent[neighbor] = current
 
     return parent, visited
+
+def reconstruct_path(parent, goal):
+    path = []
+    while goal is not None:
+        path.append(goal)
+        goal = parent.get(goal)
+    return path[::-1]
