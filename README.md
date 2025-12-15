@@ -66,3 +66,4 @@ the A* algorithm with step-by-step animation.
 Run:
 ```bash
 python grid_animate.py
+```
