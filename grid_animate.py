@@ -35,3 +35,10 @@ def draw(frame):
     ax.set_xticks(range(cols))
     ax.set_yticks(range(rows))
     ax.grid(True)
+anim = FuncAnimation(
+    fig,
+    draw,
+    frames=len(visited) + 8,
+    interval=300,
+    repeat=False
+)
