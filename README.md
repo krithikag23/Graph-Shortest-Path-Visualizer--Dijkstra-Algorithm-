@@ -52,3 +52,17 @@ similar to how pathfinding works in games and robotics.
 ### Run Grid Pathfinding
 ```bash
 python grid_main.py
+```
+
+## Animated Grid Pathfinding (A*)
+
+The repository also includes a game-style 2D grid pathfinding demo using
+the A* algorithm with step-by-step animation.
+
+- Blue cells: explored nodes
+- Green line: final shortest path
+- Black cells: obstacles
+
+Run:
+```bash
+python grid_animate.py
