@@ -68,7 +68,7 @@ that visualizes how the algorithm explores the grid.
 - Black cells: obstacles
 - Supports diagonal movement for natural, game-like paths
 
-Run:
+### Run Grid Animation:
 ```bash
 python grid_animate.py
 ```
