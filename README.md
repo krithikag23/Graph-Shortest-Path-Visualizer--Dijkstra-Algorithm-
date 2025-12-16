@@ -56,8 +56,7 @@ python grid_main.py
 
 ## Animated Grid Pathfinding (A*)
 
-The repository also includes a game-style 2D grid pathfinding demo using
-the A* algorithm with step-by-step animation.
+
 
 - Blue cells: explored nodes
 - Green line: final shortest path
