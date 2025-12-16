@@ -44,7 +44,9 @@ This project also includes **2D grid-based pathfinding** using the A* algorithm,
 similar to how pathfinding works in games and robotics.
 
 ### Features
-- Grid with obstacles (0 = free, 1 = blocked)
+- Grid cells:
+  - `0` → free cell
+  - `1` → obstacle
 - A* algorithm with Manhattan heuristic
 - Shortest path reconstruction
 - Visual grid display with highlighted path
