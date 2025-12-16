@@ -57,7 +57,7 @@ python grid_main.py
 ## Animated Grid Pathfinding (A*)
 
 The grid-based A* implementation includes a **step-by-step animation**
-
+that visualizes how the algorithm explores the grid.
 
 
 - Blue cells: explored nodes
