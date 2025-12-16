@@ -50,6 +50,7 @@ similar to how pathfinding works in games and robotics.
 - A* algorithm with Manhattan heuristic
 - Shortest path reconstruction
 - Visual grid display with highlighted path
+- **Diagonal movement (8-direction support)**
 
 ### Run Grid Pathfinding
 ```bash
