@@ -63,6 +63,7 @@ that visualizes how the algorithm explores the grid.
 - Blue cells: explored nodes
 - Green line: final shortest path
 - Black cells: obstacles
+- Supports diagonal movement for natural, game-like paths
 
 Run:
 ```bash
