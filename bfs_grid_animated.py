@@ -31,3 +31,10 @@ def bfs_animated(grid, start, goal):
                 queue.append(neighbor)
 
     return parent, visited_order
+
+def reconstruct_path(parent, goal):
+    path = []
+    while goal is not None:
+        path.append(goal)
+        goal = parent.get(goal)
+    return path[::-1]
