@@ -12,3 +12,22 @@ def get_neighbors(pos, grid):
         if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 0:
             neighbors.append((nx, ny))
     return neighbors
+
+def bfs_animated(grid, start, goal):
+    queue = deque([start])
+    parent = {start: None}
+    visited_order = []
+
+    while queue:
+        current = queue.popleft()
+        visited_order.append(current)
+
+        if current == goal:
+            break
+
+        for neighbor in get_neighbors(current, grid):
+            if neighbor not in parent:
+                parent[neighbor] = current
+                queue.append(neighbor)
+
+    return parent, visited_order
