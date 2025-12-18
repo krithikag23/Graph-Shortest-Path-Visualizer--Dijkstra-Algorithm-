@@ -12,3 +12,5 @@ astar_parent, astar_visited = a_star_animated(GRID, START, GOAL)
 
 bfs_final = bfs_path(bfs_parent, GOAL)
 astar_final = astar_path(astar_parent, GOAL)
+
+rows, cols = len(GRID), len(GRID[0])
