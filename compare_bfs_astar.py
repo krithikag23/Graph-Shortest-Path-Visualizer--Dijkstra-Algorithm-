@@ -44,3 +44,4 @@ def animate(frame):
 frames = max(len(bfs_visited), len(astar_visited)) + 10
 
 anim = FuncAnimation(fig, animate, frames=frames, interval=300, repeat=False)
+plt.show()
