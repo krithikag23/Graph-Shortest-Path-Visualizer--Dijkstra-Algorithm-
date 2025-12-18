@@ -36,3 +36,7 @@ def draw(ax, visited, path, title, frame):
     ax.set_xticks(range(cols))
     ax.set_yticks(range(rows))
     ax.grid(True)
+
+def animate(frame):
+    draw(ax1, bfs_visited, bfs_final, "BFS Search", frame)
+    draw(ax2, astar_visited, astar_final, "A* Search", frame)
