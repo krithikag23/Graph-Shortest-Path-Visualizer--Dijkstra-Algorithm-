@@ -11,3 +11,4 @@ bfs_parent, bfs_visited = bfs_animated(GRID, START, GOAL)
 astar_parent, astar_visited = a_star_animated(GRID, START, GOAL)
 
 bfs_final = bfs_path(bfs_parent, GOAL)
+astar_final = astar_path(astar_parent, GOAL)
