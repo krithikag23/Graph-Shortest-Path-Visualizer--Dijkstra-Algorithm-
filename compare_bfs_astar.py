@@ -9,3 +9,5 @@ from a_star_grid_animated import a_star_animated, reconstruct_path as astar_path
 # Run BFS and A*
 bfs_parent, bfs_visited = bfs_animated(GRID, START, GOAL)
 astar_parent, astar_visited = a_star_animated(GRID, START, GOAL)
+
+bfs_final = bfs_path(bfs_parent, GOAL)
