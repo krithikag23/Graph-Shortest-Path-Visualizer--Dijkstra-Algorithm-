@@ -14,3 +14,4 @@ bfs_final = bfs_path(bfs_parent, GOAL)
 astar_final = astar_path(astar_parent, GOAL)
 
 rows, cols = len(GRID), len(GRID[0])
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
