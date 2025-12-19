@@ -72,3 +72,5 @@ that visualizes how the algorithm explores the grid.
 ```bash
 python grid_animate.py
 ```
+
+## BFS vs A* Animated Comparison
