@@ -78,3 +78,4 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 
 
 ### Comparison Highlights
+- BFS explores the grid uniformly without a heuristic
