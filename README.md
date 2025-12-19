@@ -84,3 +84,4 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 
 ### Animation Legend
 - Blue cells → explored nodes
+- Green path → final shortest path
