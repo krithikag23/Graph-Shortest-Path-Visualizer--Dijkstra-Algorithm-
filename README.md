@@ -88,3 +88,5 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 - Black cells → obstacles
 
 ### Run Comparison
+```bash
+python compare_bfs_astar.py
