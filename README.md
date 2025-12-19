@@ -81,3 +81,5 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 - BFS explores the grid uniformly without a heuristic
 - A* uses heuristic guidance to reach the goal faster
 - A* typically visits fewer nodes than BFS
+
+### Animation Legend
