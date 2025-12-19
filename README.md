@@ -75,3 +75,6 @@ python grid_animate.py
 
 ## BFS vs A* Animated Comparison
 The repository includes a side-by-side animated comparison of **BFS** and **A\*** on the same 2D grid.
+
+
+### Comparison Highlights
