@@ -86,3 +86,5 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 - Blue cells → explored nodes
 - Green path → final shortest path
 - Black cells → obstacles
+
+### Run Comparison
