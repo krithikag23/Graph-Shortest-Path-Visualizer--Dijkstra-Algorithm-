@@ -83,3 +83,4 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 - A* typically visits fewer nodes than BFS
 
 ### Animation Legend
+- Blue cells → explored nodes
