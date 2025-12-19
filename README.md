@@ -90,3 +90,4 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 ### Run Comparison
 ```bash
 python compare_bfs_astar.py
+```
