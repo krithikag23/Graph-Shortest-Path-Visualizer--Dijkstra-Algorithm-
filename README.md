@@ -91,3 +91,5 @@ The repository includes a side-by-side animated comparison of **BFS** and **A\**
 ```bash
 python compare_bfs_astar.py
 ```
+
+### Diagonal Corner-Cutting Prevention
