@@ -8,23 +8,38 @@ def heuristic(a, b):
     return math.sqrt((a[0] - b[0])**2 + (a[1] - b[1])**2)
 
 def get_neighbors(pos, grid):
-    # 8-direction movement
-    directions = [
-        (0, 1), (1, 0), (0, -1), (-1, 0),     # straight
-        (1, 1), (1, -1), (-1, 1), (-1, -1)    # diagonals
-    ]
+    import math
 
     rows, cols = len(grid), len(grid[0])
+    x, y = pos
+
+    # (dx, dy, cost)
+    directions = [
+        (0, 1, 1), (1, 0, 1), (0, -1, 1), (-1, 0, 1),      # straight
+        (1, 1, math.sqrt(2)), (1, -1, math.sqrt(2)),      # diagonals
+        (-1, 1, math.sqrt(2)), (-1, -1, math.sqrt(2))
+    ]
+
     neighbors = []
 
-    for dx, dy in directions:
-        nx, ny = pos[0] + dx, pos[1] + dy
-        if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 0:
-            # diagonal cost = √2, straight = 1
-            cost = math.sqrt(2) if dx != 0 and dy != 0 else 1
-            neighbors.append(((nx, ny), cost))
+    for dx, dy, cost in directions:
+        nx, ny = x + dx, y + dy
+
+        if not (0 <= nx < rows and 0 <= ny < cols):
+            continue
+
+        if grid[nx][ny] == 1:
+            continue
+
+        # 🚫 Prevent diagonal corner cutting
+        if dx != 0 and dy != 0:
+            if grid[x + dx][y] == 1 or grid[x][y + dy] == 1:
+                continue
+
+        neighbors.append(((nx, ny), cost))
 
     return neighbors
+
 
 
 def a_star_animated(grid, start, goal):
