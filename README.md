@@ -95,4 +95,4 @@ python compare_bfs_astar.py
 ### Diagonal Corner-Cutting Prevention
 
 Diagonal movement is restricted to prevent passing through obstacle corners.
-A diagonal step is allowed 
+A diagonal step is allowed only if both adjacent horizontal and vertical
