@@ -93,3 +93,5 @@ python compare_bfs_astar.py
 ```
 
 ### Diagonal Corner-Cutting Prevention
+
+Diagonal movement 
